@@ -25,4 +25,16 @@ Route::middleware([
     Route::get('/system', function () {
         return view('system.index');
     })->name('system');
+
+    Route::get('/system/libros', function(){
+        return view('system.libros.index');
+    });
+
+    Route::get('/system/prestamos', function(){
+        return view('system.prestamos.index');
+    });
+
+    Route::get('/system/usuarios', function(){
+        return view('system.usuarios.index');
+    });
 });
