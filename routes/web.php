@@ -30,6 +30,10 @@ Route::middleware([
         return view('system.libros.index');
     });
 
+    Route::get('/system/autores', function(){
+        return view('system.autores.index');
+    });
+
     Route::get('/system/prestamos', function(){
         return view('system.prestamos.index');
     });
