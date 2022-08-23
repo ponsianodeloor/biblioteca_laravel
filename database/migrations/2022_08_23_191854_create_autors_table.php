@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('autors', function (Blueprint $table) {
             $table->id();
+            $table->char('nombres', 60);
+            $table->char('apellidos', 60);
+            $table->char('cedula', 10);
+            $table->char('ruc', 60);
+            $table->char('email', 60);
             $table->timestamps();
         });
     }
