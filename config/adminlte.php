@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Bibloteca',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -296,8 +296,18 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'Libros',
+            'url'  => 'system/libros',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Prestamos',
+            'url'  => 'system/prestamos',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Usuarios',
+            'url'  => 'system/usuarios',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
