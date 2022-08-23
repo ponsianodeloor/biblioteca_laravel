@@ -18,7 +18,7 @@ return new class extends Migration
             $table->char('nombres', 60);
             $table->char('apellidos', 60);
             $table->char('cedula', 10);
-            $table->char('ruc', 60);
+            $table->char('ruc', 13);
             $table->char('email', 60);
             $table->timestamps();
         });

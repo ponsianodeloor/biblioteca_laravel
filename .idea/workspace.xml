@@ -7,6 +7,7 @@
     <list default="true" id="592ea5aa-d047-406f-b0c1-a1e67712e2ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2022_08_23_191854_create_autors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_08_23_191854_create_autors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661272787807</updated>
       <workItem from="1661272800635" duration="407000" />
-      <workItem from="1661274262154" duration="7512000" />
+      <workItem from="1661274262154" duration="9994000" />
     </task>
     <servers />
   </component>
