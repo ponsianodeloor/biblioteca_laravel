@@ -34,15 +34,9 @@ class AutorController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Autor  $autor
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Autor $autor)
-    {
-        //
+    public function show($id){
+        $autor = Autor::find($id);
+        return view('system.autores.show', compact('autor'));
     }
 
     /**

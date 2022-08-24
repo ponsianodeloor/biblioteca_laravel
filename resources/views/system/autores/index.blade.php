@@ -12,7 +12,7 @@
     <ul>
         @foreach($autores as $autor)
             <li>
-                <a href="">Ver </a>
+                <a href="{{route('autores.show', $autor->id)}}">Ver </a>
                 -
                 {{$autor->id}} -
                 {{$autor->nombres}} {{$autor->apellidos}} {{$autor->cedula}} -
