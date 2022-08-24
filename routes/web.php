@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AutorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,8 +30,9 @@ Route::middleware([
         return view('system.libros.index');
     });
 
-    Route::get('/system/autores', function(){
-        return view('system.autores.index');
+    Route::resource('system/autores', AutorController::class);
+    Route::controller(AutorController::class)->group(function (){
+
     });
 
     Route::get('/system/prestamos', function(){

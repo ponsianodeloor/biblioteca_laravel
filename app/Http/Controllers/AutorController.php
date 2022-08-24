@@ -7,14 +7,10 @@ use Illuminate\Http\Request;
 
 class AutorController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $autores = Autor::orderBy('id', 'desc')->paginate();
+        return view('system.autores.index', compact('autores'));
     }
 
     /**

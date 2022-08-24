@@ -3,11 +3,24 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Libros</h1>
+    <h1>Autores</h1>
 @stop
 
 @section('content')
     <p>Autores de los libros.</p>
+    <a href="#"> Crear Autor</a>
+    <ul>
+        @foreach($autores as $autor)
+            <li>
+                <a href="">Ver </a>
+                -
+                {{$autor->id}} -
+                {{$autor->nombres}} {{$autor->apellidos}} {{$autor->cedula}} -
+                {{$autor->created_at}}
+            </li>
+        @endforeach
+        {{$autores->links()}}
+    </ul>
 @stop
 
 @section('css')
