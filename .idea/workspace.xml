@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="592ea5aa-d047-406f-b0c1-a1e67712e2ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AutorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AutorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Autor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Autor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_08_23_191854_create_autors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_08_23_191854_create_autors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/system/autores/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system/autores/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +185,7 @@
       <workItem from="1661316707126" duration="618000" />
       <workItem from="1661357368610" duration="3103000" />
       <workItem from="1661390955788" duration="5510000" />
-      <workItem from="1661434533812" duration="3513000" />
+      <workItem from="1661434533812" duration="3768000" />
     </task>
     <servers />
   </component>
