@@ -14,7 +14,7 @@
             </a>
         </div>
         <div class="col-2">
-            <a href="{{route('autores.show', $autor->id)}}">
+            <a href="{{route('autores.edit', $autor->id)}}">
                 <x-adminlte-button label="Editar" theme="primary" icon="fas fa-key"/>
             </a>
         </div>

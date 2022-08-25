@@ -39,27 +39,22 @@ class AutorController extends Controller
         return view('system.autores.show', compact('autor'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Autor  $autor
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Autor $autor)
-    {
-        //
+    public function edit($id){
+        $autor = Autor::find($id);
+        return view('system.autores.edit', compact('autor'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Autor  $autor
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Autor $autor)
-    {
-        //
+    public function update(Request $request){
+        $autor = new Autor();
+        $autor->nombres = $request->nombres;
+        $autor->apellidos = $request->apellidos;
+        $autor->cedula = $request->cedula;
+        $autor->ruc = $request->ruc;
+        $autor->email = $request->email;
+
+        $autor->save();
+
+        return redirect()->route('autores.show', $autor);
     }
 
     /**

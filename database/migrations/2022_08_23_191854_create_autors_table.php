@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('autors', function (Blueprint $table) {
+        Schema::create('autores', function (Blueprint $table) {
             $table->id();
-            $table->char('nombres', 60);
-            $table->char('apellidos', 60);
-            $table->char('cedula', 10);
-            $table->char('ruc', 13);
-            $table->char('email', 60);
+            $table->string('nombres', 60);
+            $table->string('apellidos', 60);
+            $table->string('cedula', 10);
+            $table->string('ruc', 13);
+            $table->string('email', 60);
             $table->timestamps();
         });
     }
