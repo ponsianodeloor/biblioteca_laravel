@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreAutorRequest;
 use App\Models\Autor;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,8 @@ class AutorController extends Controller
         return view('system.autores.create');
     }
 
-    public function store(Request $request){
+    public function store(StoreAutorRequest $request){
+        /*
         $autor = new Autor();
 
         $autor->nombres = $request->nombres;
@@ -27,7 +29,8 @@ class AutorController extends Controller
         $autor->email = $request->email;
 
         $autor->save();
-
+        */
+        $autor = Autor::create($request->all());
         return redirect()->route('autores.show', $autor);
     }
 

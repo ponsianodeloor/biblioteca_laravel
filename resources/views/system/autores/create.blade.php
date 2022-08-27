@@ -30,6 +30,8 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
+                @error('nombres')
+                @enderror
 
                 <x-adminlte-input name="apellidos" label="Apellidos" placeholder="Apellidos"
                                   label-class="text-lightblue">
@@ -39,6 +41,8 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
+                @error('apellidos')
+                @enderror
 
                 <x-adminlte-input name="cedula" label="Cedula" placeholder="Cedula" label-class="text-lightblue">
                     <x-slot name="prependSlot">
@@ -47,6 +51,8 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
+                @error('cedula')
+                @enderror
 
                 <x-adminlte-input name="ruc" label="RUC" placeholder="RUC" label-class="text-lightblue">
                     <x-slot name="prependSlot">
@@ -55,8 +61,9 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
+                @error('ruc')
+                @enderror
 
-                {{-- With a link on the bottom slot and old support enabled --}}
                 <x-adminlte-input name="email" label="Email" placeholder="postal code" enable-old-support>
                     <x-slot name="prependSlot">
                         <div class="input-group-text text-olive">
@@ -64,6 +71,8 @@
                         </div>
                     </x-slot>
                 </x-adminlte-input>
+                @error('email')
+                @enderror
 
             </div>
 
