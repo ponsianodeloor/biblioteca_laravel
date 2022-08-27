@@ -71,7 +71,23 @@
 
             </div>
 
+        </div>
+    </form>
 
+    <div class="row mb-2">
+        <div class="col-2" >
+            <form action="{{route('autores.destroy', $autor)}}" method="post">
+                @csrf
+                @method('delete')
+                <x-adminlte-button label="Eliminar" theme="danger" icon="fas fa-key" type="submit"/>
+            </form>
+        </div>
+        <div class="col-10">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
             <!-- Main node for this component -->
             <div class="timeline timeline-inverse">
                 <!-- Timeline time label -->
@@ -103,9 +119,8 @@
                     <i class="fas fa-clock bg-gray"></i>
                 </div>
             </div>
-
         </div>
-    </form>
+    </div>
 
 @stop
 

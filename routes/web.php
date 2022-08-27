@@ -30,9 +30,16 @@ Route::middleware([
         return view('system.libros.index');
     });
 
-    Route::resource('system/autores', AutorController::class);
+    //Route::resource('system/autores', AutorController::class);
     Route::controller(AutorController::class)->group(function (){
+        Route::get('/system/autores', 'index')->name('autores.index');
+        Route::get('/system/autores/create', 'create')->name('autores.create');
+        Route::get('/system/autores/{id}', 'show')->name('autores.show');
+        Route::get('/system/autores/{id}/edit', 'edit')->name('autores.edit');
 
+        Route::post('/system/autores/', 'store')->name('autores.store');
+        Route::put('/system/autores/{id}', 'update')->name('autores.update');
+        Route::delete('system/autores/{id}', 'destroy')->name('autores.destroy');
     });
 
     Route::get('/system/prestamos', function(){

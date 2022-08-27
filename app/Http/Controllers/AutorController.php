@@ -45,7 +45,7 @@ class AutorController extends Controller
     }
 
     public function update(Request $request){
-        $autor = new Autor();
+        $autor = Autor::findOrFail($request->id);
         $autor->nombres = $request->nombres;
         $autor->apellidos = $request->apellidos;
         $autor->cedula = $request->cedula;
@@ -57,14 +57,8 @@ class AutorController extends Controller
         return redirect()->route('autores.show', $autor);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Autor  $autor
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Autor $autor)
-    {
-        //
+    public function destroy(Request $request){
+        Autor::destroy($request->id);
+        return redirect()->route('autores.index');
     }
 }
