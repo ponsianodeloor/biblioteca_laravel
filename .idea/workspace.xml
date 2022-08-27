@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="592ea5aa-d047-406f-b0c1-a1e67712e2ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/biblioteca_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/biblioteca_laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreAutorRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreAutorRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/system/autores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system/autores/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +199,7 @@
       <workItem from="1661357368610" duration="3103000" />
       <workItem from="1661390955788" duration="5510000" />
       <workItem from="1661434533812" duration="5428000" />
-      <workItem from="1661557249199" duration="8676000" />
+      <workItem from="1661557249199" duration="6810000" />
     </task>
     <servers />
   </component>
