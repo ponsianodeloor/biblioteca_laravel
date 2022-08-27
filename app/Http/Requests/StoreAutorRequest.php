@@ -16,8 +16,8 @@ class StoreAutorRequest extends FormRequest
         return [
             'nombres'=>'required|max:20',
             'apellidos'=>'required|min:3',
-            'cedula'=>'required|min:10|max10',
-            'ruc'=>'required|min:13|max13',
+            'cedula'=>'required|min:10|max:10',
+            'ruc'=>'required|min:13|max:13',
             'email'=>'required|email'
         ];
     }

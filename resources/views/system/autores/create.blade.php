@@ -23,7 +23,7 @@
             <div class="col-8">
 
                 {{-- With prepend slot --}}
-                <x-adminlte-input name="nombres" label="Nombres" placeholder="Nombres" label-class="text-lightblue">
+                <x-adminlte-input name="nombres" label="Nombres" placeholder="Nombres" label-class="text-lightblue" value="{{@old('nombres')}}">
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
                             <i class="fas fa-user text-lightblue"></i>
@@ -33,7 +33,7 @@
                 @error('nombres')
                 @enderror
 
-                <x-adminlte-input name="apellidos" label="Apellidos" placeholder="Apellidos"
+                <x-adminlte-input name="apellidos" label="Apellidos" placeholder="Apellidos" value="{{@old('apellidos')}}
                                   label-class="text-lightblue">
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
@@ -44,7 +44,7 @@
                 @error('apellidos')
                 @enderror
 
-                <x-adminlte-input name="cedula" label="Cedula" placeholder="Cedula" label-class="text-lightblue">
+                <x-adminlte-input name="cedula" label="Cedula" placeholder="Cedula" label-class="text-lightblue" value="{{@old('cedula')}}>
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
                             <i class="fas fa-user text-lightblue"></i>
@@ -54,7 +54,7 @@
                 @error('cedula')
                 @enderror
 
-                <x-adminlte-input name="ruc" label="RUC" placeholder="RUC" label-class="text-lightblue">
+                <x-adminlte-input name="ruc" label="RUC" placeholder="RUC" label-class="text-lightblue" value="{{@old('ruc')}}>
                     <x-slot name="prependSlot">
                         <div class="input-group-text">
                             <i class="fas fa-user text-lightblue"></i>
@@ -64,7 +64,7 @@
                 @error('ruc')
                 @enderror
 
-                <x-adminlte-input name="email" label="Email" placeholder="postal code" enable-old-support>
+                <x-adminlte-input name="email" label="Email" placeholder="postal code" enable-old-support value="{{@old('email')}}>
                     <x-slot name="prependSlot">
                         <div class="input-group-text text-olive">
                             <i class="fas fa-map-marked-alt"></i>
