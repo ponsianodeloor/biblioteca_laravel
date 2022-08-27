@@ -13,25 +13,22 @@ class AutorController extends Controller
         return view('system.autores.index', compact('autores'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('system.autores.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request){
+        $autor = new Autor();
+
+        $autor->nombres = $request->nombres;
+        $autor->apellidos = $request->apellidos;
+        $autor->cedula = $request->cedula;
+        $autor->ruc = $request->ruc;
+        $autor->email = $request->email;
+
+        $autor->save();
+
+        return redirect()->route('autores.show', $autor);
     }
 
     public function show($id){

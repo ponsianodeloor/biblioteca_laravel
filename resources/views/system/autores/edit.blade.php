@@ -18,9 +18,7 @@
                 </a>
             </div>
             <div class="col-2">
-                <a href="{{route('autores.show', $autor->id)}}">
                     <x-adminlte-button label="Guardar" theme="primary" icon="fas fa-save" type="submit"/>
-                </a>
             </div>
             <div class="col-8">
 

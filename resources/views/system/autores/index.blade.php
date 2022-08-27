@@ -8,7 +8,7 @@
 
 @section('content')
     <p>Autores de los libros.</p>
-    <a href="#"> Crear Autor</a>
+    <a href="{{route('autores.create')}}"> Crear Autor</a>
     <ul>
         @foreach($autores as $autor)
             <li>
