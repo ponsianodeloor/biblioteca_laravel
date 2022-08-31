@@ -34,6 +34,10 @@ Route::middleware([
         return view('dashboard_slot_2');
     })->name('dashboard_slot_2');
 
+    Route::get('/dashboard_slot_merge', function () {
+        return view('dashboard_slot_merge');
+    })->name('dashboard_slot_merge');
+
     Route::get('/system/libros', function(){
         return view('system.libros.index');
     });
