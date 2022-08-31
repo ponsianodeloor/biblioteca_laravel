@@ -42,6 +42,10 @@ Route::middleware([
         return view('dashboard_slot_component');
     })->name('dashboard_slot_component');
 
+    Route::get('/dashboard_jet_component', function () {
+        return view('dashboard_jet_component');
+    })->name('dashboard_jet_component');
+
     Route::get('/system/libros', function(){
         return view('system.libros.index');
     });
