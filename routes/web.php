@@ -26,6 +26,10 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/dashboard_slot', function () {
+        return view('dashboard_slot');
+    })->name('dashboard_slot');
+
     Route::get('/system/libros', function(){
         return view('system.libros.index');
     });
