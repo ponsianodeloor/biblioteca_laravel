@@ -30,6 +30,10 @@ Route::middleware([
         return view('dashboard_slot');
     })->name('dashboard_slot');
 
+    Route::get('/dashboard_slot_2', function () {
+        return view('dashboard_slot_2');
+    })->name('dashboard_slot_2');
+
     Route::get('/system/libros', function(){
         return view('system.libros.index');
     });
