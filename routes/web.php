@@ -22,9 +22,9 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/system', function () {
-        return view('system.index');
-    })->name('system');
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
     Route::get('/system/libros', function(){
         return view('system.libros.index');
