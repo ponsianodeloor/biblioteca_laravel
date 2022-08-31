@@ -8,7 +8,9 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-alert/>
+                <x-alert>
+                    <p>Todo lo que se encuentra aqui es una variable slot en laravel</p>
+                </x-alert>
             </div>
         </div>
     </div>
