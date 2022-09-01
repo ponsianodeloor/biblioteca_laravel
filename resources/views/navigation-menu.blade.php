@@ -16,6 +16,32 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard_slot') }}" :active="request()->routeIs('dashboard_slot')">
+                        {{ __('Slot') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard_slot_2') }}" :active="request()->routeIs('dashboard_slot_2')">
+                        {{ __('Slot 2') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard_slot_component') }}" :active="request()->routeIs('dashboard_slot_component')">
+                        {{ __('Slot Component') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard_slot_merge') }}" :active="request()->routeIs('dashboard_slot_merge')">
+                        {{ __('Slot Merge') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('dashboard_jet_component') }}" :active="request()->routeIs('dashboard_jet_component')">
+                        {{ __('Slot Jet Component') }}
+                    </x-jet-nav-link>
+                </div>
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
