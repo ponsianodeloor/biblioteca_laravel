@@ -70,3 +70,11 @@ Route::middleware([
         return view('system.usuarios.index');
     });
 });
+
+Route::get('/mayor_de_edad', function (){
+    return 'has accedido correctamente a esta ruta';
+})->middleware('validadMayorDeEdad');
+
+Route::get('/acceso_no_autorizado', function (){
+    return 'Acceso no autorizado';
+});
