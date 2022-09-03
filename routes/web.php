@@ -78,3 +78,8 @@ Route::get('/mayor_de_edad', function (){
 Route::get('/acceso_no_autorizado', function (){
     return 'Acceso no autorizado';
 });
+
+Route::get('/mayor_de_edad_autentificado', function (){
+    $email = auth()->user()->email;
+    return  "$email has accedido correctamente usuario autentificado";
+})->middleware(['validarMayorDeEdadAutentificado', 'auth:sanctum']);
